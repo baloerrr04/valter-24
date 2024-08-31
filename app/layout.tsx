@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Inter, Press_Start_2P} from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import Script from "next/script";
@@ -55,8 +55,13 @@ export const metadata: Metadata = {
     creator: "@ariqfrhan",
     images: ["https://www.yourwebsite.com/twitter-image.jpg"],
   },
-  viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
+};
+
+// Move the viewport configuration to its dedicated export
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
