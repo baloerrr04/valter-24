@@ -17,12 +17,27 @@ export const social: SocialIcon[] = [
   //   link: "https://github.com/ariqfrhan",
   //   icon: <FaGithub />,
   // },
+  // {
+  //   link: "https://www.linkedin.com/in/muhammad-akbar-adityah/",
+  //   icon: <FaLinkedin />,
+  // },
   {
-    link: "https://www.linkedin.com/in/muhammad-akbar-adityah/",
+    link: "https://www.instagram.com/valterpolsri",
+    icon: <FaInstagram />,
+  },
+];
+
+export const guestSocial: SocialIcon[] = [
+  // {
+  //   link: "https://github.com/ariqfrhan",
+  //   icon: <FaGithub />,
+  // },
+  {
+    link: "https://www.linkedin.com/in/sadam-permana-927635190/",
     icon: <FaLinkedin />,
   },
   {
-    link: "https://www.instagram.com/akbaradityahhh",
+    link: "https://www.instagram.com/sadampermana.w",
     icon: <FaInstagram />,
   },
 ];
@@ -73,116 +88,84 @@ export const techStack = [
 export const experience = [
   {
     id: 1,
-    title: "Lorem",
-    company: "lorem",
-    timeline: "Feb 2024 - Jul 2024",
+    title: "Technical Meeting Semua Lomba",
+    company: "",
+    timeline: "27 September 2024 (Online)",
     image: "/V.png",
-    description: [
-      "Led the development of an end-to-end Robotic Process Automation (RPA) solution to optimize Sales & Aftersales Productivity Reports and Aftersales Branch Outstanding Reports for branches at Auto2000, using UiPath and achieving 92% time efficiency and increased 27x productivity",
-      "Developed 6 Sales & Aftersales Productivity Analytical Dashboard with PowerBI as the end product of RPA script.",
-      "Participated and developed Individual Learning Path feature on Auto2000's internal employee development website for employee competency development in 126 branches",
-    ],
+    description: ""
   },
   {
     id: 2,
-    title: "Lorem",
-    company: "lorem",
-    timeline: "Feb 2024 - Jul 2024",
+    title: "Penyisihan Lomba Mobile Legends",
+    company: "",
+    timeline: "28 September 2024 (Online)",
     image: "/V.png",
-    description: [
-      "Led the development of an end-to-end Robotic Process Automation (RPA) solution to optimize Sales & Aftersales Productivity Reports and Aftersales Branch Outstanding Reports for branches at Auto2000, using UiPath and achieving 92% time efficiency and increased 27x productivity",
-      "Developed 6 Sales & Aftersales Productivity Analytical Dashboard with PowerBI as the end product of RPA script.",
-      "Participated and developed Individual Learning Path feature on Auto2000's internal employee development website for employee competency development in 126 branches",
-    ],
+    description: ""
   },
   {
     id: 3,
-    title: "Lorem",
-    company: "lorem",
-    timeline: "Feb 2024 - Jul 2024",
+    title: "Pengumpulan Karya Lomba Infografia dan Video Campaign",
+    company: "",
+    timeline: "29 Sept - 6 Oktober 2024",
     image: "/V.png",
-    description: [
-      "Led the development of an end-to-end Robotic Process Automation (RPA) solution to optimize Sales & Aftersales Productivity Reports and Aftersales Branch Outstanding Reports for branches at Auto2000, using UiPath and achieving 92% time efficiency and increased 27x productivity",
-      "Developed 6 Sales & Aftersales Productivity Analytical Dashboard with PowerBI as the end product of RPA script.",
-      "Participated and developed Individual Learning Path feature on Auto2000's internal employee development website for employee competency development in 126 branches",
-    ],
+    description: ""
   },
   {
     id: 4,
-    title: "Lorem",
-    company: "lorem",
-    timeline: "Feb 2024 - Jul 2024",
+    title: "Penysihan dan pengumuman Finalis Lomba Info dan Video",
+    company: "",
+    timeline: "7-9 Oktober 2024, 10 Oktober 2024",
     image: "/V.png",
-    description: [
-      "Led the development of an end-to-end Robotic Process Automation (RPA) solution to optimize Sales & Aftersales Productivity Reports and Aftersales Branch Outstanding Reports for branches at Auto2000, using UiPath and achieving 92% time efficiency and increased 27x productivity",
-      "Developed 6 Sales & Aftersales Productivity Analytical Dashboard with PowerBI as the end product of RPA script.",
-      "Participated and developed Individual Learning Path feature on Auto2000's internal employee development website for employee competency development in 126 branches",
-    ],
+    description: ""
   },
   {
     id: 5,
-    title: "Lorem",
-    company: "lorem",
-    timeline: "Feb 2024 - Jul 2024",
+    title: "Presentasi Finalis lomba Info dan Video",
+    company: "",
+    timeline: "12 Oktober 2024",
     image: "/V.png",
-    description: [
-      "Led the development of an end-to-end Robotic Process Automation (RPA) solution to optimize Sales & Aftersales Productivity Reports and Aftersales Branch Outstanding Reports for branches at Auto2000, using UiPath and achieving 92% time efficiency and increased 27x productivity",
-      "Developed 6 Sales & Aftersales Productivity Analytical Dashboard with PowerBI as the end product of RPA script.",
-      "Participated and developed Individual Learning Path feature on Auto2000's internal employee development website for employee competency development in 126 branches",
-    ],
+    description: ""
   },
-  {
-    id: 6,
-    title: "Lorem",
-    company: "lorem",
-    timeline: "Feb 2024 - Jul 2024",
-    image: "/V.png",
-    description: [
-      "Led the development of an end-to-end Robotic Process Automation (RPA) solution to optimize Sales & Aftersales Productivity Reports and Aftersales Branch Outstanding Reports for branches at Auto2000, using UiPath and achieving 92% time efficiency and increased 27x productivity",
-      "Developed 6 Sales & Aftersales Productivity Analytical Dashboard with PowerBI as the end product of RPA script.",
-      "Participated and developed Individual Learning Path feature on Auto2000's internal employee development website for employee competency development in 126 branches",
-    ],
-  },
-  
 ];
 
 export const projects = [
   {
     type: "lomba",
-    title: "Video Campaign",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores nisi.",
-    image: "/V.png",
+    title: "Infografis",
+    desc: "Membuat desain infografis informatif dan menarik untuk berbagai audiens.",
+    image: "/InfografisBadge32bit.png",
     linkGithub: "",
   },
   {
     type: "lomba",
     title: "Video Campaign",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores nisi.",
-    image: "/V.png",
+    desc: "Mengembangkan kampanye video yang kreatif dan berpengaruh.",
+    image: "/VideoBadge32bit.png",
     linkGithub: "",
   },
   {
     type: "lomba",
-    title: "Video Campaign",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores nisi.",
-    image: "/V.png",
+    title: "PUBG Mobile",
+    desc: "Kompetisi game PUBG Mobile untuk mengasah strategi dan keterampilan tim.",
+    image: "/PUBGBadge32bit.png",
     linkGithub: "",
   },
   {
     type: "pelatihan",
     title: "Game Development",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores nisi.",
+    desc: "Pelatihan intensif dalam pengembangan game dengan pendekatan praktis.",
     image: "/V.png",
     linkGithub: "",
   },
   {
     type: "seminar",
     title: "Laravel cloud run with CI/CD",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores nisi.",
+    desc: "Seminar tentang penerapan Laravel di cloud dengan pipeline CI/CD.",
     image: "/V.png",
     linkGithub: "",
   },
 ];
+
 
 export const imageProject = [
   {
@@ -191,3 +174,36 @@ export const imageProject = [
     src: "/V.png", // Replace with the path to your image
   },
 ];
+
+export const documentations = [
+  {
+    src: "/_MG_0031.JPG"
+  },
+  {
+    src: "/DSC00407.JPG"
+  },
+  {
+    src: "/DSC02021.JPG"
+  },
+  {
+    src: "/DSC02289.JPG"
+  },
+  {
+    src: "/DSC02596.JPG"
+  },
+  {
+    src: "/DSC02913.JPG"
+  },
+  {
+    src: "/DSC02963.JPG"
+  },
+  {
+    src: "/DSC02997.JPG"
+  },
+  {
+    src: "/IMG_1460.JPG"
+  },
+  {
+    src: "/IMG_3534.JPG"
+  },
+]
