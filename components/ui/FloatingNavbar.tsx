@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useCallback } from "react";
+
+import React, { useState, useCallback, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -9,6 +10,7 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+
 export const FloatingNav = ({
   navItems,
   className,
@@ -22,7 +24,24 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
-  const [menuOpen, setMenuOpen] = useState(false); // State to manage menu visibility
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // State to track if it's mobile
+
+  useEffect(() => {
+    // Function to check window width
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener to track window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -81,14 +100,13 @@ export const FloatingNav = ({
         }}
       >
         {/* Logo on the left side */}
-        
 
-        {/* Navigation items, shown conditionally based on screen size and menu state */}
+        {/* Navigation items */}
         <div
           className={cn(
             "flex md:flex-row flex-col md:space-x-4 space-y-4 md:space-y-0",
             {
-              hidden: !menuOpen && window.innerWidth < 768,
+              hidden: !menuOpen && isMobile,
             }
           )}
         >
@@ -123,8 +141,8 @@ export const FloatingNav = ({
       </motion.div>
 
       <div className="absolute left-0 top-0 flex md:hidden items-center">
-          <img src="./V.png" alt="" />
-        </div>
+        <img src="./V.png" alt="" />
+      </div>
     </AnimatePresence>
   );
 };
