@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import CardTime from "./card-time";
+import CardTime from "./Card-time";
 
 const Countdown = ({ targetDate }: { targetDate: string | number }) => {
   const [timeLeft, setTimeLeft] = useState({

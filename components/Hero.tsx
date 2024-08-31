@@ -6,7 +6,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { Typewriter } from "nextjs-simple-typewriter";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
-import CardTime from "./ui/card-time";
+import CardTime from "./ui/Card-time";
 import Countdown from "./ui/Countdown";
 
 const heroVariants = {
