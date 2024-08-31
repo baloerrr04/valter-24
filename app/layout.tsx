@@ -58,7 +58,6 @@ export const metadata: Metadata = {
   robots: "index, follow",
 };
 
-// Move the viewport configuration to its dedicated export
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1.0,
@@ -95,7 +94,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {" "}
           {children}
         </ThemeProvider>
       </body>
