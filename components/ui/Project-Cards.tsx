@@ -7,21 +7,17 @@ const ProjectCards = ({
   title,
   desc,
   image,
-  linkWeb,
   linkGithub,
-  stack,
 }: {
   title: string;
   desc: string;
   image: string;
-  linkWeb?: string;
   linkGithub?: string;
-  stack: string[];
 }) => (
   <HoverBorderGradient
     as={"div"}
     containerClassName="rounded-3xl"
-    className="bg-slate-900 border border-slate-800 backdrop-blur-xl p-4 overflow-hidden flex flex-col w-full md:w-[360px] md:h-[480px] max-w-sm"
+    className="bg-slate-900 border border-slate-800 backdrop-blur-xl p-4 overflow-hidden  flex flex-col w-full md:w-[300px] md:h-[420px] max-w-sm shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
     style={{
       background: "rgb(4,7,29)",
       backgroundColor:
@@ -42,40 +38,20 @@ const ProjectCards = ({
       <p className="block font-sans text-sm w-full antialiased text-justify text-slate-300 font-light leading-relaxed text-inherit">
         {desc}
       </p>
-      <div className="flex flex-row pt-2 items-center gap-1">
-        {stack.map((stacks) => {
-          return (
-            <p
-              key={stacks}
-              className="text-xs px-2 py-2 bg-transparent backdrop-blur-lg border border-slate-800 rounded-lg"
-            >
-              {stacks}
-            </p>
-          );
-        })}
-      </div>
     </div>
     <div className="py-4 pt-0 flex flex-col gap-2 items-center">
       <button
-        className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-blue-500 text-white shadow-md shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-        type="button"
-        onClick={() => window.open(linkWeb)}
-        disabled={!linkWeb}
-      >
-        <FaGlobe />
-        Website
-      </button>
-      <button
-        className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-[#24292e] text-white shadow-md shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+        className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-[#24292e] text-white shadow-[5px_5px_0px_0px_rgba(109,40,217)] shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none "
         type="button"
         onClick={() => window.open(linkGithub)}
         disabled={!linkGithub}
       >
-        <FaGithub size={20} />
-        Github
+        Daftar
       </button>
     </div>
   </HoverBorderGradient>
+
+  
 );
 
 export default ProjectCards;

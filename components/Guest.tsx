@@ -7,30 +7,48 @@ import { AnimatedTooltip } from "./ui/Animated-tooltip";
 import { social, techStack } from "@/data/data";
 import { motion } from "framer-motion";
 import { fadeAnimation, fadeRight, techStackAnimation } from "@/lib/animation";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
 
-function About() {
+function Guest() {
   return (
     <section
-      id="about"
-      className="w-full py-10 lg:py-20 flex flex-col lg:flex-col justify-between lg:items-center"
+      id="guest"
+      className="w-full py-10 lg:py-20 "
     >
-      <h1 className="text-white font-bold text-xl md:text-3xl lg:text-3xl text-center">
-        Tentang
+      {/* Subheading H1 */}
+      <h1 className="text-white font-bold text-xl md:text-3xl lg:text-3xl text-center w-full mb-12">
+        Bintang Tamu
       </h1>
+      <div className="flex flex-col lg:flex-row justify-center">
+      <div className="w-full lg:w-1/3">
+        <Card
+          title="Lets connect!"
+          icon={
+            <img src="/sadam.jpg" className="object-cover overflow-hidden" />
+          }
+          socialIcons={social}
+        >
+          <CanvasRevealEffect
+            animationSpeed={3}
+            containerClassName="bg-sky-600"
+            colors={[[125, 211, 252]]}
+          />
+        </Card>
+      </div>
       <div className="flex flex-col w-full lg:w-2/3 px-8">
         <motion.div {...fadeAnimation} variants={fadeRight}>
-          <p className="text-gray-400 mt-6 text-xs lg:text-sm text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            ratione alias aliquam harum voluptate, porro assumenda rem, possimus
-            aliquid qui soluta reprehenderit! Voluptas recusandae deleniti
-            quibusdam odio saepe labore dolores!
+          <TextGenerateEffect
+            words="SADAM"
+            className="text-center lg:text-start text-[15px] md:text-xl lg:text-3xl font-bold"
+          />
+        </motion.div>
+        <motion.div {...fadeAnimation} variants={fadeRight}>
+          <p className="text-gray-400 mt-4 text-xs lg:text-sm text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, at. Neque voluptate eius dolores sit magnam, expedita aliquam facilis inventore recusandae reprehenderit tenetur voluptatem amet ratione at culpa voluptates? Consequuntur.
           </p>
         </motion.div>
-        {/* <motion.div>
+        <motion.div>
           <div className="mt-4 font-medium">
-            <p className="text-gray-200">Tech stack :</p>
+            <p className="text-gray-200">Prestasi</p>
             <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-start w-full lg:w-4/5 gap-x-4">
               {techStack.map((tech, index) => {
                 return (
@@ -47,39 +65,18 @@ function About() {
                         "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
                     }}
                   >
-                    <img className="w-5" src={tech.image} />
+                    {/* <img className="w-5" src={tech.image} /> */}
                     <p className="text-xs md:text-sm">{tech.name}</p>
                   </motion.div>
                 );
               })}
             </div>
           </div>
-        </motion.div> */}
+        </motion.div>
       </div>
-      <div className="w-full lg:w-1/3 mt-6">
-        <Card
-          title="Lets connect!"
-          icon={
-            <img src="/adit.jpeg" className="object-cover overflow-hidden" />
-          }
-        ></Card>
       </div>
-
-      <motion.a
-          href="/Muhammad Akbar Adityah-resume.pdf"
-          download={"Muhammad akbar adityah-resume"}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 10 }}
-          transition={{ duration: 1.3, delay: 1.5 }}
-        >
-          <MagicButton
-            title="Buku Panduan"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </motion.a>
     </section>
   );
 }
 
-export default About;
+export default Guest;

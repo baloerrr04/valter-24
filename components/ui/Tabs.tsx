@@ -50,7 +50,7 @@ export const Tabs = ({
             onClick={() => moveSelectedTabToTop(idx)}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 py-2 rounded-full", tabClassName)}
+            className={cn("relative px-3 py-1 rounded-full", tabClassName)}
             style={{ transformStyle: "preserve-3d" }}
           >
             {active.value === tab.value && (

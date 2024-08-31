@@ -64,9 +64,9 @@ const Experiences: React.FC = () => {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div id="experience" className="py-10 md:py-20 w-full">
-      <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-5xl text-center">
-        Some of <span className="text-blue-500">Work Experience</span>
+    <div id="timeline" className="py-10 md:py-20 w-full">
+      <h1 className="text-white font-bold text-xl md:text-3xl lg:text-3xl text-center">
+        Timeline
       </h1>
       <div className="antialiased text-gray-100 py-20">
         <div className="container relative flex flex-col px-6 mx-auto space-y-2">

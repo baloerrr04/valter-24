@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Press_Start_2P} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
+const pressStart = Press_Start_2P({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Ariq Farhan's Portfolio",
@@ -82,7 +83,7 @@ export default function RootLayout({
           content="SB-3CM2udTlzDWz9PkjqPrNRjLzSIAvaarREPe6C6uY"
         />
       </head>
-      <body className={inter.className}>
+      <body className={pressStart.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

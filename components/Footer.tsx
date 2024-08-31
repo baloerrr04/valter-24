@@ -17,18 +17,18 @@ const Footer = () => {
         <img src="/footer-grid.svg" className="w-full h-full opacity-50" />
       </div>
       <div className="flex relative flex-col items-center">
-        <h1 className="text-center text-3xl lg:text-5xl font-bold lg:max-[45vw]">
-          Let's Make Things <span className="text-blue-500">Happen</span>{" "}
+        <h1 className="text-center text-xl lg:text-3xl font-bold lg:max-[45vw]">
+          Let's Make Things <span className="text-primary-two">Happen</span>{" "}
           Together!
         </h1>
-        <p className="mt-8 text-sm md:text-base text-slate-300 text-center">
+        <p className="mt-8 text-[10px] md:text-base text-slate-300 text-center">
           Get in touch now to find out how I can help you reach your goals. I
           welcome new ideas and opportunities for engaging and significant
           projects.
         </p>
         <div className="flex flex-row gap-3 mt-8 md:mt-0">
           <a
-            href="https://www.upwork.com/freelancers/~01236fb1439ad7748e"
+            href=""
             target="_blank"
           >
             <MagicButton
@@ -37,7 +37,7 @@ const Footer = () => {
               position="left"
             />
           </a>
-          <a href="mailto:muhammadariq3@gmail.com">
+          <a href="">
             <MagicButton
               title="Reach me on email"
               icon={<FaMailBulk />}
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
       <div className="flex relative mt-16 md:flex-row flex-col justify-between items-center gap-y-4">
         <p className="md:text-base text-sm md:font-normal font-light">
-          © Muhammad Ariq Farhan - 2024
+          © Valter - 2024
         </p>
         <div className="flex flex-row items-center gap-3">
           {social.map((soc, index) => {

@@ -1,9 +1,11 @@
 import About from "@/components/About";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
+import Guest from "@/components/Guest";
 import { Hero } from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Gallery from "@/components/ui/Gallery";
 import { navItem } from "@/data/data";
 
 export default function Home() {
@@ -13,8 +15,10 @@ export default function Home() {
         <FloatingNav navItems={navItem}></FloatingNav>
         <Hero />
         <About />
-        <Experiences />
+        <Guest/>
         <Projects />
+        <Experiences />
+        <Gallery/>
         <Footer />
       </div>
     </main>

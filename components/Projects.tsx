@@ -2,7 +2,7 @@
 import React, { useState, useMemo } from "react";
 import { Tabs } from "./ui/Tabs";
 import ProjectCards from "./ui/Project-Cards";
-import { projects, videoProject } from "@/data/data";
+import { projects, imageProject } from "@/data/data";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { fadeAnimation, fadeUp } from "@/lib/animation";
@@ -13,12 +13,12 @@ const Projects = () => {
   const tabs = useMemo(
     () => [
       {
-        title: "Website",
-        value: "website",
+        title: "Lomba",
+        value: "lomba",
         content: (
           <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 justify-center bg-transparent backdrop-blur-xl">
             {projects
-              .filter((proj) => proj.type === "web")
+              .filter((proj) => proj.type === "lomba")
               .map((proj, index) => {
                 return (
                   <ProjectCards
@@ -26,9 +26,7 @@ const Projects = () => {
                     title={proj.title}
                     desc={proj.desc}
                     image={proj.image}
-                    linkWeb={proj.linkWeb}
                     linkGithub={proj.linkGithub}
-                    stack={proj.stack}
                   />
                 );
               })}
@@ -36,12 +34,12 @@ const Projects = () => {
         ),
       },
       {
-        title: "Mobile",
-        value: "mobile",
+        title: "Pelatihan",
+        value: "pelatihan",
         content: (
           <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 justify-center bg-transparent backdrop-blur-xl">
             {projects
-              .filter((proj) => proj.type === "mobile")
+              .filter((proj) => proj.type === "pelatihan")
               .map((proj, index) => {
                 return (
                   <ProjectCards
@@ -49,9 +47,7 @@ const Projects = () => {
                     title={proj.title}
                     desc={proj.desc}
                     image={proj.image}
-                    linkWeb={proj.linkWeb}
                     linkGithub={proj.linkGithub}
-                    stack={proj.stack}
                   />
                 );
               })}
@@ -59,23 +55,23 @@ const Projects = () => {
         ),
       },
       {
-        title: "Videography",
-        value: "videography",
+        title: "Seminar",
+        value: "seminar",
         content: (
-          <div className="relative grid grid-cols mt-8 gap-8 justify-center">
-            {videoProject.map((video, index) => {
-              return (
-                <VideoProject
-                  key={index}
-                  title={video.title}
-                  company={video.company}
-                  link={video.link}
-                  desc={video.desc}
-                  stack={video.stack}
-                  index={index}
-                />
-              );
-            })}
+          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 justify-center bg-transparent backdrop-blur-xl">
+            {projects
+              .filter((proj) => proj.type === "pelatihan")
+              .map((proj, index) => {
+                return (
+                  <ProjectCards
+                    key={index}
+                    title={proj.title}
+                    desc={proj.desc}
+                    image={proj.image}
+                    linkGithub={proj.linkGithub}
+                  />
+                );
+              })}
           </div>
         ),
       },
@@ -85,8 +81,8 @@ const Projects = () => {
 
   return (
     <div id="project" className="py-10 md:py-20 pb-24 w-full">
-      <h1 className="text-white font-bold text-3xl md:text-5xl lg:text-5xl text-center">
-        Featured <span className="text-blue-500">Projects</span>
+      <h1 className="text-white font-bold text-xl md:text-3xl lg:text-3xl text-center">
+        Kegiatan
       </h1>
       <motion.div
         {...fadeAnimation}
