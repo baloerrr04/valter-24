@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 const pressStart = Press_Start_2P({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Ariq Farhan's Portfolio",
+  title: "Valter 2024",
   description:
     "Welcome to the personal portfolio of Muhammad Ariq Farhan, a versatile software engineer, colorist, and RPA specialist with expertise in web and mobile app development, automation, and video editing.",
   keywords: [
