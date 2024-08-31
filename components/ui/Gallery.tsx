@@ -15,6 +15,7 @@ import "../../public/style.css";
 // import required modules
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import { fadeAnimation, fadeRight } from "@/lib/animation";
+import { documentations } from "@/data/data";
 
 const Gallery = () => {
   return (
@@ -39,36 +40,15 @@ const Gallery = () => {
         loop={true}
         className="mySwiper w-full pt-[50px] pb-[50px]"
       >
-        <SwiperSlide className="bg-center bg-cover w-72 h-72">
+        {documentations.map((documentation, index) => (
+        <SwiperSlide key={index} className="bg-center bg-cover w-72 h-72">
           <img
             className="block w-full"
-            src="https://swiperjs.com/demos/images/nature-1.jpg"
+            src={documentation.src}
           />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-        </SwiperSlide>
+        ))}
+        
       </Swiper>
     </motion.div>
   );
