@@ -16,18 +16,19 @@ const Projects = () => {
         title: "Lomba",
         value: "lomba",
         content: (
-          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 justify-center bg-transparent backdrop-blur-xl">
+          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 bg-transparent backdrop-blur-xl justify-center">
             {projects
               .filter((proj) => proj.type === "lomba")
               .map((proj, index) => {
                 return (
-                  <ProjectCards
-                    key={index}
-                    title={proj.title}
-                    desc={proj.desc}
-                    image={proj.image}
-                    linkGithub={proj.linkGithub}
-                  />
+                  <div className="flex justify-center" key={index}>
+                    <ProjectCards
+                      title={proj.title}
+                      desc={proj.desc}
+                      image={proj.image}
+                      linkGithub={proj.linkGithub}
+                    />
+                  </div>
                 );
               })}
           </div>
@@ -37,18 +38,19 @@ const Projects = () => {
         title: "Pelatihan",
         value: "pelatihan",
         content: (
-          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 justify-center bg-transparent backdrop-blur-xl">
+          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 bg-transparent backdrop-blur-xl justify-center">
             {projects
               .filter((proj) => proj.type === "pelatihan")
               .map((proj, index) => {
                 return (
-                  <ProjectCards
-                    key={index}
-                    title={proj.title}
-                    desc={proj.desc}
-                    image={proj.image}
-                    linkGithub={proj.linkGithub}
-                  />
+                  <div className="flex justify-center" key={index}>
+                    <ProjectCards
+                      title={proj.title}
+                      desc={proj.desc}
+                      image={proj.image}
+                      linkGithub={proj.linkGithub}
+                    />
+                  </div>
                 );
               })}
           </div>
@@ -58,18 +60,19 @@ const Projects = () => {
         title: "Seminar",
         value: "seminar",
         content: (
-          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 justify-center bg-transparent backdrop-blur-xl">
+          <div className="gap-y-30 gap-10 lg:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 bg-transparent backdrop-blur-xl justify-center">
             {projects
-              .filter((proj) => proj.type === "pelatihan")
+              .filter((proj) => proj.type === "seminar")
               .map((proj, index) => {
                 return (
-                  <ProjectCards
-                    key={index}
-                    title={proj.title}
-                    desc={proj.desc}
-                    image={proj.image}
-                    linkGithub={proj.linkGithub}
-                  />
+                  <div className="flex justify-center" key={index}>
+                    <ProjectCards
+                      title={proj.title}
+                      desc={proj.desc}
+                      image={proj.image}
+                      linkGithub={proj.linkGithub}
+                    />
+                  </div>
                 );
               })}
           </div>

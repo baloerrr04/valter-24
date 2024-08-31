@@ -2,6 +2,7 @@
 import React from "react";
 import { HoverBorderGradient } from "./HoverBorderGradient";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import Link from "next/link";
 
 const ProjectCards = ({
   title,
@@ -17,7 +18,7 @@ const ProjectCards = ({
   <HoverBorderGradient
     as={"div"}
     containerClassName="rounded-3xl"
-    className="bg-slate-900 border border-slate-800 backdrop-blur-xl p-4 overflow-hidden  flex flex-col w-full md:w-[300px] md:h-[420px] max-w-sm shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
+    className="bg-slate-900 border border-slate-800 backdrop-blur-xl p-4 overflow-hidden w-64 flex flex-col  md:w-[300px] md:h-[420px] shadow-[5px_5px_0px_0px_rgba(109,40,217)]"
     style={{
       background: "rgb(4,7,29)",
       backgroundColor:
@@ -40,14 +41,14 @@ const ProjectCards = ({
       </p>
     </div>
     <div className="py-4 pt-0 flex flex-col gap-2 items-center">
-      <button
-        className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-[#24292e] text-white shadow-[5px_5px_0px_0px_rgba(109,40,217)] shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none "
+      <Link href={""}
+        className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-[#24292e] text-white shadow-[5px_5px_0px_0px_rgba(109,40,217)] shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none cursor-pointer"
         type="button"
         onClick={() => window.open(linkGithub)}
-        disabled={!linkGithub}
+        // disabled={!linkGithub}
       >
         Daftar
-      </button>
+      </Link>
     </div>
   </HoverBorderGradient>
 

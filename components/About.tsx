@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { fadeAnimation, fadeRight, techStackAnimation } from "@/lib/animation";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import VideoCard from "./ui/VideoCard";
 
 function About() {
   return (
@@ -57,12 +58,9 @@ function About() {
         </motion.div> */}
       </div>
       <div className="w-full lg:w-1/3 mt-6">
-        <Card
-          title="Lets connect!"
-          icon={
-            <img src="/adit.jpeg" className="object-cover overflow-hidden" />
-          }
-        ></Card>
+       <VideoCard
+        videoSrc="/teaser.mov"
+       ></VideoCard>
       </div>
 
       <motion.a
@@ -71,6 +69,7 @@ function About() {
           initial={{ opacity: 0, y: 0 }}
           animate={{ opacity: 1, y: 10 }}
           transition={{ duration: 1.3, delay: 1.5 }}
+          className="mt-4 w-full flex justify-center"
         >
           <MagicButton
             title="Buku Panduan"

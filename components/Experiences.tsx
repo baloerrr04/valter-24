@@ -80,7 +80,6 @@ const Experiences: React.FC = () => {
                   ? "lg:timeline-container lg:ml-auto lg:w-[calc(50%-20px)]"
                   : "timeline-container-left lg:mr-auto lg:w-[calc(50%-20px)]"
               }`}
-              onClick={() => setActive(card)}
             >
               <div
                 className={`absolute w-4 h-4 bg-white rounded-full z-20 ${
@@ -94,7 +93,7 @@ const Experiences: React.FC = () => {
               <Button
                 duration={Math.floor(Math.random() * 10000) + 10000}
                 borderRadius="1.5rem"
-                className="w-full"
+                className="w-full "
                 style={{
                   background: "rgb(4,7,29)",
                   backgroundColor:
@@ -102,20 +101,20 @@ const Experiences: React.FC = () => {
                   zIndex: 1,
                 }}
               >
-                <div className="flex flex-row items-center lg:items-center p-3 py-6 md:p-5 lg:p-6 gap-4 ">
+                <div className="flex flex-row items-center lg:items-center p-3 py-3 md:p-5 lg:p-6 gap-4 ">
                   <img
                     src={card.image}
                     className={`${
                       !isMobile && index % 2 === 0 ? "block" : "block lg:hidden"
                     } w-14 h-14 items-center md:w-20 md:h-20`}
                   />
-                  <div className="flex flex-col">
+                  <div className="flex flex-col gap-2">
                     <h1
                       className={`${
                         !isMobile && index % 2 === 1
                           ? "text-start lg:text-end"
                           : "text-start"
-                      } text-md md:text-lg font-semibold`}
+                      } text-[10px] md:text-md font-semibold`}
                     >
                       {card.title}
                     </h1>
@@ -133,7 +132,7 @@ const Experiences: React.FC = () => {
                         !isMobile && index % 2 === 1
                           ? "text-start lg:text-end"
                           : "text-start"
-                      } text-xs md:text-sm font-regular text-gray-300`}
+                      } text-[8px] md:text-sm font-regular text-gray-300`}
                     >
                       {card.timeline}
                     </p>
@@ -241,11 +240,11 @@ const Experiences: React.FC = () => {
                       exit={{ opacity: 0 }}
                       className="text-neutral-600 text-xs md:text-sm lg:text-base pb-10 flex flex-col items-start gap-4 dark:text-neutral-400"
                     >
-                      <ol className="list-disc pl-5">
+                      {/* <ol className="list-disc pl-5">
                         {active.description?.map((desc, index) => {
                           return <li key={index}>{desc}</li>;
                         })}
-                      </ol>
+                      </ol> */}
                     </motion.div>
                   </div>
                 </div>

@@ -21,13 +21,13 @@ const Footer = () => {
           Let's Make Things <span className="text-primary-two">Happen</span>{" "}
           Together!
         </h1>
-        <p className="mt-8 text-[10px] md:text-base text-slate-300 text-center">
+        {/* <p className="mt-8 text-[10px] md:text-base text-slate-300 text-center">
           Get in touch now to find out how I can help you reach your goals. I
           welcome new ideas and opportunities for engaging and significant
           projects.
-        </p>
+        </p> */}
         <div className="flex flex-row gap-3 mt-8 md:mt-0">
-          <a
+          {/* <a
             href=""
             target="_blank"
           >
@@ -36,10 +36,10 @@ const Footer = () => {
               icon={<FaUpwork />}
               position="left"
             />
-          </a>
+          </a> */}
           <a href="">
             <MagicButton
-              title="Reach me on email"
+              title="email"
               icon={<FaMailBulk />}
               position="left"
             />
