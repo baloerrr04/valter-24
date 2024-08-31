@@ -5,7 +5,7 @@ import Guest from "@/components/Guest";
 import { Hero } from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import Gallery from "@/components/ui/Gallery";
+import Gallery from "@/components/Gallery";
 import { navItem } from "@/data/data";
 
 export default function Home() {
