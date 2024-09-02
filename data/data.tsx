@@ -160,7 +160,7 @@ export const projects = [
     type: "pelatihan",
     title: "Animasi 2D",
     desc: "Pelatihan dasar animasi 2D, mencakup desain karakter dan teknik animasi.",
-    image: "/V.png",
+    image: "/Pelatihan.png",
     linkGithub: "https://docs.google.com/forms/d/e/1FAIpQLSfoShRxTaMQj3PUr78WOFtHZOogzqM0GgJTIBxdD0FRiXyFpQ/viewform?usp=sharing",
     linkGuide: "/Buku Panduan Pelatihan.pdf",
     guideName: "Buku Panduan Pelatihan"
