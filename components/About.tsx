@@ -1,10 +1,5 @@
 "use client";
 import React from "react";
-import Card from "./ui/Card";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { CanvasRevealEffect } from "./ui/Canvas-reveal-effect";
-import { AnimatedTooltip } from "./ui/Animated-tooltip";
-import { social, techStack } from "@/data/data";
 import { motion } from "framer-motion";
 import { fadeAnimation, fadeRight, techStackAnimation } from "@/lib/animation";
 import MagicButton from "./ui/MagicButton";
@@ -23,10 +18,7 @@ function About() {
       <div className="flex flex-col w-full lg:w-2/3 px-8">
         <motion.div {...fadeAnimation} variants={fadeRight}>
           <p className="text-gray-400 mt-6 text-xs lg:text-sm text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-            ratione alias aliquam harum voluptate, porro assumenda rem, possimus
-            aliquid qui soluta reprehenderit! Voluptas recusandae deleniti
-            quibusdam odio saepe labore dolores!
+          Festival Multimedia dan Komputer 2023 (VALTER) menjadi platform yang sangat penting bagi mahasiswa untuk mengeksplorasi dan merayakan inovasi teknologi. Dengan tema “Keep grinding and make something!” VALTER mendorong para peserta untuk merangkul masa depan yang cerah di dunia teknologi yang terus berkembang.
           </p>
         </motion.div>
         {/* <motion.div>
@@ -58,25 +50,8 @@ function About() {
         </motion.div> */}
       </div>
       <div className="w-full lg:w-1/3 mt-6">
-       <VideoCard
-        videoSrc="/teaser.mov"
-       ></VideoCard>
+        <VideoCard videoSrc="/teaser.mov"></VideoCard>
       </div>
-
-      <motion.a
-          href="/Muhammad Akbar Adityah-resume.pdf"
-          download={"Muhammad akbar adityah-resume"}
-          initial={{ opacity: 0, y: 0 }}
-          animate={{ opacity: 1, y: 10 }}
-          transition={{ duration: 1.3, delay: 1.5 }}
-          className="mt-4 w-full flex justify-center"
-        >
-          <MagicButton
-            title="Buku Panduan"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </motion.a>
     </section>
   );
 }

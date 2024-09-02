@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { HoverBorderGradient } from "./HoverBorderGradient";
-import { FaGithub, FaGlobe } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaGithub, FaGlobe, FaLocationArrow } from "react-icons/fa";
 import Link from "next/link";
 
 const ProjectCards = ({
@@ -9,11 +10,15 @@ const ProjectCards = ({
   desc,
   image,
   linkGithub,
+  linkGuide,
+  guideName
 }: {
   title: string;
   desc: string;
   image: string;
   linkGithub?: string;
+  linkGuide: string,
+  guideName: string,
 }) => (
   <HoverBorderGradient
     as={"div"}
@@ -29,7 +34,7 @@ const ProjectCards = ({
       <img
         src={image}
         alt="card-image"
-        className="object-cover w-full h-full"
+        className="object-contain w-full h-full p-2"
       />
     </div>
     <div className="py-5">
@@ -40,7 +45,7 @@ const ProjectCards = ({
         {desc}
       </p>
     </div>
-    <div className="py-4 pt-0 flex flex-col gap-2 items-center">
+    <div className="py-2 pt-0 flex flex-col gap-2 items-center">
       <Link href={""}
         className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-[#24292e] text-white shadow-[5px_5px_0px_0px_rgba(109,40,217)] shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none cursor-pointer"
         type="button"
@@ -49,6 +54,16 @@ const ProjectCards = ({
       >
         Daftar
       </Link>
+      <a
+       href={linkGuide}
+       download={guideName}
+        className="align-middle flex flex-row items-center justify-center gap-2 w-full select-none font-sans font-semibold text-center transition-all text-sm py-3 px-6 rounded-lg bg-primary-ten text-black-100 shadow-[5px_5px_0px_0px_rgba(109,40,217)] shadow-blue-900/10 hover:shadow-lg hover:shadow-blue-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none cursor-pointer"
+        type="button"
+        // disabled={!linkGithub}
+      >
+        Download Buku Panduan
+      </a>
+      
     </div>
   </HoverBorderGradient>
 

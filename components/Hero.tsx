@@ -20,7 +20,7 @@ const spotlightVariants = {
 };
 
 export const Hero = () => {
-  const targetDate = "2024-09-02T00:00:00";
+  const targetDate = "2024-09-26T00:00:00";
   return (
     <div id="home" className="pb-20 pt-36 dark:bg-black-100 bg-white relative">
       <AnimatePresence>
@@ -64,7 +64,8 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.3, delay: 1.5 }}
               >
-                Valter 2024
+                <span className="text-[#CF35FF]">Valter</span>{" "}
+                <span className="text-[#5FFFC9]">2024</span>
               </motion.p>
 
               <TextGenerateEffect
@@ -78,7 +79,7 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 10 }}
                 transition={{ duration: 1.3, delay: 1.5 }}
               >
-                Pendaftaran tanggal 2 September
+                Batas Pendaftaran tanggal 26 September
               </motion.p>
 
               <motion.div
@@ -86,9 +87,8 @@ export const Hero = () => {
                 animate={{ opacity: 1, y: 10 }}
                 transition={{ duration: 1.3, delay: 1.5 }}
               >
-              <Countdown targetDate={targetDate} />
+                <Countdown targetDate={targetDate} />
               </motion.div>
-                
 
               {/* <motion.a
                 href="/Muhammad Ariq Farhan-resume.pdf"

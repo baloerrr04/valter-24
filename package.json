@@ -1,12 +1,14 @@
 {
-  "name": "my-portfolio-next",
+  "name": "valter-24",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://valterpolsri.ac.id/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@react-three/fiber": "^8.16.8",

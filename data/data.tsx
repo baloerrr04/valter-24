@@ -134,35 +134,45 @@ export const projects = [
     title: "Infografis",
     desc: "Membuat desain infografis informatif dan menarik untuk berbagai audiens.",
     image: "/InfografisBadge32bit.png",
-    linkGithub: "",
+    linkGithub: "https://docs.google.com/forms/d/e/1FAIpQLSeOkoD0-qF6W0NR2eXEmAC6oojO2Fw2Q7bvKdKLCVW35nUpIA/viewform?usp=sharing",
+    linkGuide: "/Buku Panduan Infografis.pdf",
+    guideName: "Buku Panduan Infografis"
   },
   {
     type: "lomba",
     title: "Video Campaign",
     desc: "Mengembangkan kampanye video yang kreatif dan berpengaruh.",
     image: "/VideoBadge32bit.png",
-    linkGithub: "",
+    linkGithub: "https://docs.google.com/forms/d/e/1FAIpQLSdyz-HHDB29N3Gm94qQ3wN3AreGuyMpmf0-vsvG2b_5US8pVg/viewform?usp=sharing",
+    linkGuide: "/Buku Panduan Campaign Video.pdf",
+    guideName: "Buku Panduan Campaign Video"
   },
   {
     type: "lomba",
     title: "PUBG Mobile",
     desc: "Kompetisi game PUBG Mobile untuk mengasah strategi dan keterampilan tim.",
     image: "/PUBGBadge32bit.png",
-    linkGithub: "",
+    linkGithub: "https://docs.google.com/forms/d/e/1FAIpQLSd4tWw5fqDwBAUcJuw4s7Jk0nyBXdIn_S9kF8P0_hnSm8aDRw/viewform?usp=sharing",
+    linkGuide: "/Buku Panduan PUBG.pdf",
+    guideName: "Buku Panduan PUBG"
   },
   {
     type: "pelatihan",
-    title: "Game Development",
-    desc: "Pelatihan intensif dalam pengembangan game dengan pendekatan praktis.",
+    title: "Animasi 2D",
+    desc: "Pelatihan dasar animasi 2D, mencakup desain karakter dan teknik animasi.",
     image: "/V.png",
-    linkGithub: "",
+    linkGithub: "https://docs.google.com/forms/d/e/1FAIpQLSfoShRxTaMQj3PUr78WOFtHZOogzqM0GgJTIBxdD0FRiXyFpQ/viewform?usp=sharing",
+    linkGuide: "/Buku Panduan Pelatihan.pdf",
+    guideName: "Buku Panduan Pelatihan"
   },
   {
     type: "seminar",
-    title: "Laravel cloud run with CI/CD",
-    desc: "Seminar tentang penerapan Laravel di cloud dengan pipeline CI/CD.",
-    image: "/V.png",
-    linkGithub: "",
+    title: "GEN-Z menghadapi tantangan untuk memasuki dunia karier",
+    desc: "Seminar tentang tantangan dan persiapan karier bagi generasi Z.",
+    image: "/SaddamSeminar.png",
+    linkGithub: "https://docs.google.com/forms/d/e/1FAIpQLScde-DWBMxLQPrUQMNsgbZgbxgzuYIVTnPZTiMKorPRvd5gJQ/viewform?usp=sharing4",
+    linkGuide: "/Buku Panduan Seminar.pdf",
+    guideName: "Buku Panduan Seminar"
   },
 ];
 

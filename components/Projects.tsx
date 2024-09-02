@@ -27,6 +27,8 @@ const Projects = () => {
                       desc={proj.desc}
                       image={proj.image}
                       linkGithub={proj.linkGithub}
+                      linkGuide={proj.linkGuide}
+                      guideName={proj.guideName}
                     />
                   </div>
                 );
@@ -49,6 +51,8 @@ const Projects = () => {
                       desc={proj.desc}
                       image={proj.image}
                       linkGithub={proj.linkGithub}
+                      linkGuide={proj.linkGuide}
+                      guideName={proj.guideName}
                     />
                   </div>
                 );
@@ -71,6 +75,8 @@ const Projects = () => {
                       desc={proj.desc}
                       image={proj.image}
                       linkGithub={proj.linkGithub}
+                      linkGuide={proj.linkGuide}
+                      guideName={proj.guideName}
                     />
                   </div>
                 );

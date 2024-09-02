@@ -11,8 +11,7 @@ export const metadata: Metadata = {
   title: "Valter 2024",
 };
 
-export const viewport: Viewport = {
-};
+export const viewport: Viewport = {};
 
 export default function RootLayout({
   children,
@@ -22,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+      <link rel="icon" href="/V.ico" />
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-N3W96JXQNT"
